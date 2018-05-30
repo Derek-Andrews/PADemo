@@ -95,7 +95,7 @@
         "srcIPInboundNSG": {
             "type": "string",
             "metadata": {
-                "description": "Your source public IP address. Added to the inbound DefaultNSG on eth0 (MGMT)"
+                "description": "Your source public IP address. Added to the inbound DefaultNSG on eth2 (MGMT)"
             }
         },
         "baseUrl" : {
@@ -212,7 +212,8 @@
         "fwpublicIPName": "[concat(parameters('vmName'), '-fwMgmtPublicIP')]",
         "nicName": "[concat(parameters('vmName'), '-eth')]",
         "FWPrivateIPAddressUntrust": "[parameters('subnet1StartAddress')]",
-        "FWPrivateIPAddressTrust": "[parameters('subnet2StartAddress')]",
+        "FWPrivateIPAddressTrust": "[parameters('subnet3StartAddress')]",
+		"FWPrivateIPAddressDMZ": "[parameters('subnet4StartAddress')]",
         "publicIPAddressType": "Dynamic",
         "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName'))]",
         "nsgname-mgmt": "[concat(parameters('vmName'), '-DefaultNSG')]",

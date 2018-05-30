@@ -95,7 +95,8 @@
         "srcIPInboundNSG": {
             "type": "string",
             "metadata": {
-                "description": "Your source public IP address. Added to the inbound DefaultNSG on eth0 (MGMT)"
+                "description": "Your source public IP address. Added to the inbound DefaultNSG on eth2 (MGMT)"
+				"defaultValue":"111.222.333.444"
             }
         },
         "baseUrl" : {

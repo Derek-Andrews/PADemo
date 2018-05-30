@@ -8,6 +8,33 @@
                 "description": "region of resources"
             }
         },
+			"routeTables_DMZ_RT_name": {
+            "defaultValue": "DMZ-RT",
+            "type": "String"
+        },
+	
+			"routeTables_Trust_RT_name": {
+            "defaultValue": "Trust-RT",
+            "type": "String"
+        },
+			"routeTables_Untrust_RT_name": {
+            "defaultValue": "Untrust-RT",
+            "type": "String"
+        },
+
+		      "routes_All_To_PA_name": {
+            "defaultValue": "All-To-PA",
+            "type": "String"
+        }
+    },
+            "routes_Untrust_to_DMZ_name": {
+            "defaultValue": "Untrust-to-DMZ",
+            "type": "String"
+        },
+              "routes_Untrust_to_Trust_name": {
+            "defaultValue": "Untrust-to-Trust",
+            "type": "String"
+        },
         "newStorageAccount": {
             "type": "string",
             "metadata": {

@@ -103,7 +103,7 @@
 		"metadata": {
 			"artifactsBaseUrl": ""
 		},
-		"defaultValue": "https://raw.githubusercontent.com/dandrewsLCS/PADemo/master"
+		"defaultValue": "https://github.com/dandrewsLCS/PADemo"
 	},
     "virtualNetworkName": {
       "type": "string",

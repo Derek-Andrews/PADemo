@@ -230,6 +230,7 @@
       "metadata": {
         "description": "DMZ subnet start address"
       }
+	}
     },
     
     "variables": {

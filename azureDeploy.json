@@ -355,6 +355,9 @@
                 "name": "[parameters('subnet1Name')]",
                 "properties": {
                     "addressPrefix": "[parameters('subnet1Prefix')]",
+					"routeTable": {
+                                "id": "[resourceId('Microsoft.Network/routeTables', parameters('routeTables_Untrust_RT_name'))]"
+								},
                     "networkSecurityGroup": {
                         "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('nsgname-mgmt'))]"
                     }
@@ -367,12 +370,18 @@
             },{
                 "name": "[parameters('subnet3Name')]",
                 "properties": {
-                    "addressPrefix": "[parameters('subnet3Prefix')]"
+                    "addressPrefix": "[parameters('subnet3Prefix')]",
+					"routeTable": {
+                                "id": "[resourceId('Microsoft.Network/routeTables', parameters('routeTables_Trust_RT_name'))]"
+								},
                 }
             },{
                 "name": "[parameters('subnet4Name')]",
                 "properties": {
-                    "addressPrefix": "[parameters('subnet4Prefix')]"
+                    "addressPrefix": "[parameters('subnet4Prefix')]",
+					"routeTable": {
+                                "id": "[resourceId('Microsoft.Network/routeTables', parameters('routeTables_DMZ_RT_name'))]"
+								},
                 }
             }]
         }

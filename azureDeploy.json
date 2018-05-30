@@ -147,21 +147,21 @@
         "description": "Virtual network address CIDR"
       }
     },
-    "subnet2Name": {
-      "type": "string",
-      "defaultValue": "Mgmt",
-      "metadata": {
-        "description": "Subnet for the Mgmt"
-      }
-    },
-    "subnet1Name": {
+ 	   "subnet1Name": {
       "type": "string",
       "defaultValue": "Untrust",
       "metadata": {
         "description": "Subnet for the Untrust"
       }
     },
-    "subnet3Name": {
+	"subnet2Name": {
+      "type": "string",
+      "defaultValue": "Mgmt",
+      "metadata": {
+        "description": "Subnet for the Mgmt"
+      }
+    },
+     "subnet3Name": {
       "type": "string",
       "defaultValue": "Trust",
       "metadata": {
@@ -175,18 +175,18 @@
         "description": "Subnet for the DMZ"
       }
     },
-    "subnet2Prefix": {
-      "type": "string",
-      "defaultValue": "192.168.2.0/24",
-      "metadata": {
-        "description": "Mgmt subnet CIDR"
-      }
-    },
-    "subnet1Prefix": {
+     "subnet1Prefix": {
       "type": "string",
       "defaultValue": "192.168.1.0/24",
       "metadata": {
         "description": "Untrust subnet CIDR"
+      }
+    },
+	   "subnet2Prefix": {
+      "type": "string",
+      "defaultValue": "192.168.2.0/24",
+      "metadata": {
+        "description": "Mgmt subnet CIDR"
       }
     },
     "subnet3Prefix": {

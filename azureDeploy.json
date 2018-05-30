@@ -25,8 +25,8 @@
 		      "routes_All_To_PA_name": {
             "defaultValue": "All-To-PA",
             "type": "String"
-        }
-    },
+        },
+    
             "routes_Untrust_to_DMZ_name": {
             "defaultValue": "Untrust-to-DMZ",
             "type": "String"

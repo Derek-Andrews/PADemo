@@ -358,14 +358,15 @@
 					"routeTable": {
                                 "id": "[resourceId('Microsoft.Network/routeTables', parameters('routeTables_Untrust_RT_name'))]"
 								},
-                    "networkSecurityGroup": {
-                        "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('nsgname-mgmt'))]"
-                    }
+                  
                 }
             }, {
                 "name": "[parameters('subnet2Name')]",
                 "properties": {
-                    "addressPrefix": "[parameters('subnet2Prefix')]"
+                    "addressPrefix": "[parameters('subnet2Prefix')]",
+					  "networkSecurityGroup": {
+                        "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('nsgname-mgmt'))]"
+                    }
                 }
             },{
                 "name": "[parameters('subnet3Name')]",
@@ -401,7 +402,8 @@
             "ipConfigurations": [{
                 "name": "[concat('ipconfig', '0')]",
                 "properties": {
-                    "privateIPAllocationMethod": "Dynamic",
+                    "privateIPAllocationMethod": "Static",
+					"privateIPAddress": "192.168.2.4",
                     "publicIPAddress": {
                         "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('fwpublicIPName'))]"
                     },

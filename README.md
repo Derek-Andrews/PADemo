@@ -8,7 +8,7 @@ This ARM template deploys a VM-Series next generation firewall VM in an Azure re
 
 This template is meant to let you do customized deployments of VM-Series instead of deploying from the Azure Marketplace. You can deploy using the "Deploy to Azure" button below or download the template and customize it to your needs. You can also fork the templates into your own GitHub repository.
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2dandrewsLCS%2FPADemo%2Fmaster%2FazureDeploy.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FdandrewsLCS%2FPADemo%2Fmaster%2FazureDeploy.json)
 
 
 ## Deploy ARM Template using Azure CLI in ARM mode

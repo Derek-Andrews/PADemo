@@ -3,8 +3,8 @@
 This ARM template deploys a VM-Series next generation firewall VM in an Azure resource group. It lets you select your:
 
 - Resource Group and Storage Account inside it
-- VNET's CIDR (/16 range) with 3 subnets: Mgmt (0.0/24), Untrust (1.0/24), Trust (2.0/24)
-- Azure VM size and login for VM-Series (BYOL edition) with 3 NIC's that map to above subnets
+- VNET's CIDR (/16 range) with 4 subnets:  Untrust (1.0/24), Mgmt (2.0/24), Trust (3.0/24), DMZ (4.0/24)
+- Azure VM size and login for VM-Series (BYOL edition) with 4 NIC's that map to above subnets
 
 This template is meant to let you do customized deployments of VM-Series instead of deploying from the Azure Marketplace. You can deploy using the "Deploy to Azure" button below or download the template and customize it to your needs. You can also fork the templates into your own GitHub repository.
 

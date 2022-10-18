@@ -27,7 +27,7 @@ This template is meant to let you do customized deployments of VM-Series instead
         -d  YourDeploymentLabel  -f azureDeploy.json -e azureDeploy.parameters.json
 ```
 
-**Check the status of your deployment:**
+***Check the status of your deployment:***
 
 - CLI: `azure vm show  -g YourResourceGroupName  -n YourDeploymentLabel`
 - Azure Portal: Your Resource Group > Deployment or Alert Logs
